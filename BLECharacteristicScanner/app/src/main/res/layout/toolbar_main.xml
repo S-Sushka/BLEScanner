@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0071BC">
+
+    <ImageView
+        android:id="@+id/toolbar_bluetooth_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/vector_bluetooth"
+        android:contentDescription="@null"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+    <TextView
+        android:id="@+id/toolbar_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:paddingTop="3dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        tools:ignore="HardcodedText"/>
+
+    <TextView
+        android:id="@+id/toolbar_mac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_below="@id/toolbar_name"
+        android:textColor="#CCCCCC"
+        android:textSize="21sp"
+        tools:ignore="HardcodedText"/>
+    </RelativeLayout>
+</RelativeLayout>
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    android:background="#29ABE2"
+    android:contentDescription="@null"/>
+</LinearLayout>

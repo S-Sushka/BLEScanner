@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/rounded_white_shape">
+
+        <TextView
+            android:id="@+id/service_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
+            tools:ignore="HardcodedText"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/characteristic_viewer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/service_code"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:overScrollMode="never"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

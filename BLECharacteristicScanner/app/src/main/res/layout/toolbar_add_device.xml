@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0071BC">
+
+    <ImageView
+        android:id="@+id/toolbar_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_margin="7.5dp"
+        android:src="@drawable/vector_back"
+        android:contentDescription="@null"/>
+    <TextView
+        android:id="@+id/toolbar_device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:text="Add Device:"
+        tools:ignore="HardcodedText"/>
+</RelativeLayout>
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    android:background="#29ABE2"
+    android:contentDescription="@null"/>
+
+</LinearLayout>

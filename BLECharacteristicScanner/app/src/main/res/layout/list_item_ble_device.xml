@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="5dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/rssi_strength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/rssi_strength_0"
+            android:contentDescription="@null"/>
+
+        <TextView
+            android:id="@+id/device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:text="aboba"
+            tools:ignore="HardcodedText"/>
+
+        <TextView
+            android:id="@+id/device_mac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/device_name"
+            android:layout_marginStart="15dp"
+            android:textColor="#808080"
+            android:textSize="25sp"
+            android:text="FF:FF:FF:FF:FF:FF"
+            tools:ignore="HardcodedText"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:background="#64C7E2"
+        android:contentDescription="@null"/>
+
+</LinearLayout>
