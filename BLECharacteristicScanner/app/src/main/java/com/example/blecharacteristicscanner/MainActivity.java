@@ -58,11 +58,6 @@ import java.util.List;
 import java.util.Set;
 import java.util.UUID;
 
-/*
-    TODO: Почини Список ХАРАКТЕРИСТИК пересозданием ServiceAdapter
-    TODO: Нарисуй иконку. Допустим белый значок bluetooth на голубом фоне
-*/
-
 public class MainActivity extends AppCompatActivity
 {
     TextView toolbarName;
