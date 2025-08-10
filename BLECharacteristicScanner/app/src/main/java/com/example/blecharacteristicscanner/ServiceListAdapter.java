@@ -71,12 +71,6 @@ public class ServiceListAdapter extends RecyclerView.Adapter<com.example.blechar
         notifyItemInserted(services.size() - 1); // обновляет только новый элемент
     }
 
-    public void clear()
-    {
-        services.clear();
-        notifyDataSetChanged();
-    }
-
     @Override
     public int getItemCount() { return services.size(); }
 }

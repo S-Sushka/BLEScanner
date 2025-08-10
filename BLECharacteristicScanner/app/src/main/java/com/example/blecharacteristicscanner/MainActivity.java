@@ -59,7 +59,7 @@ import java.util.Set;
 import java.util.UUID;
 
 /*
-    TODO: Список ХАРАКТЕРИСТИК иногда отображается некорректно. Теперь проблема 99% в кэше
+    TODO: Почини Список ХАРАКТЕРИСТИК пересозданием ServiceAdapter
     TODO: Нарисуй иконку. Допустим белый значок bluetooth на голубом фоне
 */
 
@@ -257,7 +257,9 @@ public class MainActivity extends AppCompatActivity
 
                     toolbarMAC.setText(MACBuffer);
 
-                    serviceAdapter.clear();
+                    serviceAdapter = new ServiceListAdapter(this);
+                    serviceList.setAdapter(serviceAdapter);
+
                     BLEGatt = BLEDevice.connectGatt(MainActivity.this, false, gattCallback);
                 }
                 catch (SecurityException e)
